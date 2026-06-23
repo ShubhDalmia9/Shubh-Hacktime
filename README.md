@@ -19,12 +19,3 @@ A personal operating system featuring my interests
 * The Office
 * Darth Vader
 
-## What I Learned
-
-* Basic webpage structure
-* Styling with CSS
-* Using hyperlinks
-* Updating time dynamically with JavaScript
-* Creating a personalized user interface
-
-
