@@ -26,8 +26,6 @@ Each application window contains a red close button in the header.
 
 ## Welcome Window
 
-![Welcome Window](welcome-window.png)
-
 The Welcome Window acts as the introduction to SPACE OS.
 
 ### Features
@@ -45,8 +43,6 @@ The Welcome Window acts as the introduction to SPACE OS.
 ---
 
 ## Space Missions Database
-
-![Space Missions Database](missions-app.png)
 
 The Space Missions Database contains information about some of the most important missions in the history of space exploration.
 
@@ -78,8 +74,6 @@ The Space Missions Database contains information about some of the most importan
 ---
 
 ## Space Facts
-
-![Space Facts](space-facts.png)
 
 Space Facts is an interactive application that generates interesting facts about space.
 
