@@ -1,96 +1,132 @@
-# SPACE OS
+#  SPACE OS
 
-SPACE OS is a browser-based operating system inspired by humanity's journey through space exploration. Built using HTML, CSS, and JavaScript, it features interactive applications that allow users to learn about historic space missions and discover interesting facts about the universe.
+An interactive browser-based desktop operating system built entirely with HTML, CSS, and JavaScript.
 
-## Getting Started
+Explore space through a desktop experience featuring draggable windows, educational applications, wallpaper customization, note-taking, and more.
 
-When the operating system loads, you will see a desktop containing application icons.
-
-### Opening an Application
-
-To open an application:
-
-1. Click the application icon on the desktop.
-2. The application window will appear on the screen.
-3. Windows can be moved by dragging their title bar.
-
-### Closing an Application
-
-Each application window contains a red close button in the header.
-
-1. Click the red close button.
-2. The window will disappear from the screen.
-3. The application can be reopened at any time by clicking its desktop icon.
+![SPACE OS](SPACE%20OS%20V2.png)
 
 ---
 
-## Welcome Window
+#  Features
 
-The Welcome Window acts as the introduction to SPACE OS.
+##  Desktop Experience
 
-### Features
-
-* Introduction to the project
-* Overview of the purpose of SPACE OS
-* Featured image from space exploration
-* Quick explanation of what users can explore inside the operating system
-
-### How to Use
-
-* Read the mission briefing to learn about the purpose of the project.
-* Follow the provided link to learn more about the featured image or mission.
+- Beautiful space-themed desktop interface
+- Startup boot screen
+- Interactive application dock
+- Live system clock
+- Draggable windows
+- Window layering
+- Right-click context menu
+- Multiple wallpapers
+- Clean, modern UI
 
 ---
 
-## Space Missions Database
+##  Notes
 
-The Space Missions Database contains information about some of the most important missions in the history of space exploration.
+- Create and edit notes
+- Automatic Local Storage saving
+- Persistent notes after refreshing
+- **Ctrl + S** support
+- Save notification
 
-### Features
+![Notes](SPACE%20OS%20NOTES.png)
 
-* Collection of major space missions
-* Historical information about each mission
-* Coverage of missions from multiple countries and organizations
-* Educational descriptions explaining why each mission was significant
+---
 
-### Included Missions
+## Mission Explorer
 
-* Sputnik 1
-* Apollo 11
-* Voyager 1
-* International Space Station
-* Chandrayaan-1
-* Mangalyaan
-* Chandrayaan-3
-* Artemis Program
+Discover some of humanity's greatest space missions.
 
-### How to Use
+Included missions:
 
-1. Open the Space Missions Database from the desktop.
-2. Scroll through the information provided in the application window.
-3. Read about each mission and its contribution to space exploration.
-4. Use the included links to learn more from official sources.
+- Apollo 11
+- Sputnik 1
+- Voyager 1
+- Chandrayaan-3
+- Perseverance
+- Artemis II
+
+Each mission includes a description and an official resource for further reading.
+
+![Mission Explorer](SPACE%20OS%20MISSION.png)
+
+---
+
+##  Solar System Explorer
+
+Browse every major planet in our Solar System and learn more about each one.
+
+![Solar System Explorer](SPACE%20OS%20SOLAR%20SYSTEM.png)
 
 ---
 
 ## Space Facts
 
-Space Facts is an interactive application that generates interesting facts about space.
+Generate random educational facts about astronomy and space exploration.
 
-### Features
+![Space Facts](SPACE%20OS%20FACT%20GENERATOR.png)
 
-* Random space facts
-* Interactive button-based experience
-* Educational content covering astronomy and space exploration
-* Different fact displayed with each click
+---
 
-### How to Use
+##  Settings
 
-1. Open the Space Facts application.
-2. Press the "Generate Fact" button.
-3. Read the generated fact.
-4. Continue clicking the button to discover additional facts.
+Customize the desktop experience.
 
-## Creator
+- Change wallpapers
+- Access system information
+- Personalize SPACE OS
 
-Shubh Dalmia
+![Settings](SPACE%20OS%20SETTINGS.png)
+
+---
+
+##  Wallpaper Picker
+
+Choose from multiple beautiful space-themed wallpapers directly inside the operating system.
+
+![Wallpaper Picker](SPACE%20OS%20BACKGROUND%20CHANGER.png)
+
+### Opening Applications
+
+Use the dock at the bottom of the desktop to launch:
+
+- 📝 Notes
+- 🌠 Space Facts
+- 🚀 Mission Explorer
+- 🌍 Solar System Explorer
+- ⚙️ Settings
+
+### Desktop Controls
+
+- Drag application windows by their title bar.
+- Right-click anywhere on the desktop to:
+  - Refresh
+  - Create a New Note
+  - Open Settings
+  - Change Wallpaper
+
+# Applications
+
+| Application | Description |
+|-------------|-------------|
+| Welcome | Introduction to SPACE OS |
+| Notes | Persistent note-taking application |
+| Space Facts | Generates random facts about space |
+| Mission Explorer | Explore famous space missions |
+| Solar System Explorer | Learn about the planets |
+| Settings | Customize the desktop and wallpapers |
+
+---
+
+#  Project Goal
+
+SPACE OS was built to recreate the experience of a desktop operating system using only web technologies while making space exploration interactive and engaging. Instead of browsing static pages, users can navigate through a fully functional desktop environment and explore educational content in a more immersive way.
+
+---
+
+#  Author
+
+**Shubh Dalmia**
