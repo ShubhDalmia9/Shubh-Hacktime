@@ -9,13 +9,6 @@
   box-shadow: 0 0 20px rgba(76, 201, 240, 0.4);
 }
 
-#welcomeheader {
-  padding: 0.1px;
-  cursor: move;
-  z-index: 0;
-  background-color: #000000;
-  color: #fff;
-}
 
 .closebutton {
 width: 36px;
@@ -37,17 +30,518 @@ border: solid 1px rgba(0, 0, 0, 0.25);
 margin-left: 6px;
 }
 
-.selected {
-  background-color: rgba(76, 201, 240, 0.2);
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(76, 201, 240, 0.6);
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+}
+
+#desktop{
+    position:fixed;
+    inset:0;
+    overflow:hidden;
+
+    opacity:0;
+    transition:opacity .8s ease;
 }
 
 
-#notesheader {
-padding: 1px;
-cursor: move;
-z-index: 10;
-background-color: #000000;
-color: #fff;
+#bootScreen{
+  position:fixed;
+  inset:0;
+  background:black;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  z-index:99999;
+  transition:opacity .6s ease;
+}
+
+
+#bootScreen h1{
+  color:white;
+  font-size:64px;
+  margin-bottom:30px;
+  font-family:"Space Grotesk",sans-serif;
+}
+
+
+#bootButton{
+  background:white;
+  color:black;
+  padding:14px 28px;
+  font-size:18px;
+  cursor:pointer;
+  border-radius:8px;
+  transition: .2s;
+}
+
+#bootButton:hover{
+    transform:scale(1.05);
+}
+
+.fadeOut{
+    opacity:-10;
+}
+
+#dock{
+    position:fixed;
+    bottom:18px;
+    left:50%;
+    transform:translateX(-50%);
+
+    display:flex;
+    gap:14px;
+
+    padding:12px 18px;
+
+    background:rgba(20,25,40,.45);
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:22px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.45);
+
+    z-index:999;
+}
+
+.dockIcon{
+    width:78px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+.dockIcon img{
+    width:56px;
+    height:56px;
+
+    border-radius:16px;
+
+    object-fit:cover;
+
+    transition:.2s;
+}
+
+.dockIcon p{
+
+    margin-top:8px;
+
+    color:white;
+
+    font-size:12px;
+
+    text-align:center;
+
+    opacity:.9;
+}
+
+
+.dockIcon:hover{
+    transform:translateY(-8px);
+}
+
+.dockIcon:hover img{
+    transform:scale(1.15);
+}
+
+
+.dockIcon:hover p{
+    opacity:1;
+}
+
+
+
+.dockIcon::after{
+    content:"";
+
+    position:absolute;
+
+    bottom:-8px;
+
+    width:8px;
+    height:8px;
+
+    border-radius:50%;
+
+    background:#2a2d2e;
+
+    opacity:0;
+
+    transition:.25s;
+}
+
+.dockIcon.active::after{
+    opacity:1;
+}
+
+
+
+#contextMenu{
+
+    position:fixed;
+
+    display:none;
+
+    min-width:180px;
+
+    background:#162133;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.45);
+
+    z-index:100000;
+
+}
+
+.menuItem{
+
+    padding:12px 16px;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.15s;
+
+}
+
+.menuItem:hover{
+
+    background:#2B3E5A;
+
+}
+
+
+
+.wallpaperThumb{
+
+    width:100%;
+    height:130px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.wallpaperThumb:hover{
+
+    transform:scale(1.03);
+
+}
+
+
+
+.missionCard{
+
+    background:#243B55;
+
+    border-radius:10px;
+
+    padding:12px 16px;
+
+    margin-bottom:10px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+    border:1px solid transparent;
+
+}
+
+.missionCard h3{
+
+    margin:0;
+
+    color:white;
+
+    font-size:18px;
+
+}
+
+.missionCard p{
+
+    margin:4px 0 0;
+
+    color:#B8C7D6;
+
+    font-size:13px;
+
+}
+
+.missionCard h3{
+
+    margin:0;
+    color:white;
+
+}
+
+.missionCard p{
+
+    margin:8px 0 0;
+    color:#C9D6DF;
+
+}
+
+.missionCard:hover{
+
+    background:#4c5968;
+
+    border-color:#4CC9F0;
+
+    transform:translateY(-2px);
+
+}
+
+
+
+.settingItem{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:14px 16px;
+
+    background:#243B55;
+
+    border-radius:10px;
+
+    margin-top:12px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.settingItem:hover{
+
+    background:#355070;
+
+}
+
+.window{
+
+    position:absolute;
+
+    width:650px;
+
+    background:rgba(20,30,48,.88);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.45);
+
+    color:white;
+
+}
+
+.window.show{
+
+    opacity:1;
+
+    transform:translate(-50%,-50%) scale(1);
+
+}
+
+.dockIcon:hover{
+    transform:translateY(-8px);
+}
+
+.dockIcon:hover img{
+    transform:scale(1.12);
+}
+
+.dockIcon.active img{
+    outline:3px solid #4CC9F0;
+}
+
+.windowHeader{
+    height:46px;
+    background:#0A1628;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    cursor:move;
+    border-bottom:1px solid rgba(255,255,255,.12);
+    font-weight:600;
+}
+
+
+
+button{
+
+    background:#4CC9F0;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    padding:10px 18px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+    font-weight:600;
+
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+    filter:brightness(1.08);
+
+}
+
+
+input,
+textarea{
+
+    background:#22344d;
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:10px;
+
+    padding:10px;
+
+    outline:none;
+
+}
+
+.windowHeader{
+
+    height:46px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#0A1628;
+
+    color:white;
+
+    cursor:move;
+
+    font-weight:600;
+
+    user-select:none;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+
+button{
+
+    background:#4CC9F0;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    padding:10px 18px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+    font-weight:600;
+
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+    filter:brightness(1.08);
+
+}
+
+
+input,
+textarea{
+
+    background:#22344d;
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:10px;
+
+    padding:10px;
+
+    outline:none;
+
+}
+
+#saveToast{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+
+    background:#4CC9F0;
+    color:white;
+
+    padding:12px 20px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    opacity:0;
+
+    transition:.3s;
+
+    pointer-events:none;
+
+    z-index:9999;
+}
+
+#saveToast.show{
+    opacity:1;
 }

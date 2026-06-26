@@ -3,22 +3,29 @@
 <html>
   <body style=" background-image: url(https://cdn.esahubble.org/archives/images/screen/heic0910e.jpg)  ; background-size: cover">
     
-    
+
+    <div id="bootScreen">
+      <h1>SPACE OS</h1>
+     <button id="bootButton">Start System</button>
+    </div>
    
+
+<div id="desktop">
+
+
+
        <div class="window" id="welcome" 
     style="top: 60%; left: 50%; transform: translate(-50%, -50%)">
-    <div id="welcomeheader"
-      style="width: 100%; display: flex; align-items: center; cursor: move; justify-content: center; margin-top: 8px;">
+    <div id="welcomeheader"class="windowHeader">
       <p style="margin: 0px; color: #fff; font-weight: 500">Welcome</p> 
       </div>
   <div style="position: absolute; width: 100%; display: flex; backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.25); color: #fff; justify-content: space-between;" >
       <h1 style="color: rgb(255, 255, 255)" >----SPACE OS----</h1>
     </div>
-    <br> <br>  <br><br>  <br>
+    <br> <br> <br>
       <h2 style="color: #4CC9F0">Introduction</h2>
-      <p style="color: #EAEAEA" >Welcome to Space OS.This interactive operating system showcases some of the most important missions in the history of space exploration. Discover how humanity progressed from the launch of Sputnik 1 to lunar landings, Mars exploration, and modern missions such as Artemis 2 <br> <br>Enjoy!! ~Shubh Dalmia</p><br>
-      <img style="width:250px; height: 250px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGYkOYS9242XNStnFYzSmNKl-K8Sv2jZI-GOa7awYvRtZwrbrUGQoifE3MWdBZUzhYM6vJa3fKuNRyjNxX8LfLRakpza1WWmO5Qe3UK2geZA&s=10" alt="Apollo 11 Moon Landing"> <br> 
-      <a href="https://www.nasa.gov/mission/apollo-11/">Learn More ABout Apollo 11</a><br><br>
+      <p style="color: #EAEAEA" >Welcome to Space OS.This interactive operating system showcases some of the most important missions in the history of space exploration. Discover how humanity progressed from the launch of Sputnik 1 to lunar landings, Mars exploration, and modern missions such as Artemis 2 <br> <br>Enjoy!! ~Shubh Dalmia</p>
+      <img style="width:250px; height: 250px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGYkOYS9242XNStnFYzSmNKl-K8Sv2jZI-GOa7awYvRtZwrbrUGQoifE3MWdBZUzhYM6vJa3fKuNRyjNxX8LfLRakpza1WWmO5Qe3UK2geZA&s=10" alt="Apollo 11 Moon Landing">
     </div>
   </div>
 
@@ -48,93 +55,447 @@
     </div>
     
 
-  <div id="desktopApps" style="padding-top: 100px; ">
-  <div id="app1" style="text-align: center; padding: 16px; width: fit-content ;  ">
-    <img src="data:image/jpeg;base64,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" style="width: 64px; height: 64px; border-radius: 20px;">
-    <p style="margin: 0px; color: #ffffff;"> Space Missions</p>
-  </div>
+  <div id="dock">
+
+    <div class="dockIcon" id="app1">
+        <img src="https://i.pinimg.com/736x/d0/a3/48/d0a3487b7f0fc1af9f9ab6c45f83ac27.jpg">
+        <p>NOTES  </p>
+    </div>
+    <div class="dockIcon" id="factsApp">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLvgokDgr8Xt8A82uD8M9ri2FxkW-xSMiU29axKs6OVQ&s=10">
+    <p>Space Facts</p>
+    </div>
+    <div class="dockIcon" id="missionsApp">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw5pF_QiFSXc4GbrJ3Wf3keabwOqq7H4iy9HY84JDjdQ&s=10" alt="Missions Icon">
+      <p> space missions </p>
+    </div>
+     <div class="dockIcon" id="solarApp">
+    <img src="https://cdn-icons-png.flaticon.com/512/547/547414.png">
+    <p>Solar System</p>
+    </div>
+    <div class="dockIcon" id="settingsApp">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi7KVjI_iASETV1hgD40S0AnKo8pnDeDpXEJPEpTMbAA&s=10">
+    <p>Settings</p>
+    </div>
+   
+ 
 </div>
 
+<div id="missions" class="window"
+     style="display:none; position:absolute; z-index:9; background:#1B263B; width:700px; border-radius:16px; top:50%; left:50%; transform:translate(-50%,-50%);">
+
+    <div id="missionsheader" class="windowHeader">
+        <div id="missionsclose" class="closebutton"></div>
+
+        <p style="margin:0;">Mission Explorer</p>
+
+    </div>
+
+    <div id="missionList" style="padding:20px;">
+
+
+      
+    <h2 style="margin-top:0; color:#4CC9F0;">
+        Mission Explorer
+    </h2>
+
+    <div class="missionCard" data-mission="apollo">
+        <h3>Apollo 11</h3>
+        <p>First crewed Moon landing</p>
+    </div>
+
+    <div class="missionCard" data-mission="sputnik">
+        <h3>Sputnik 1</h3>
+        <p>First artificial satellite</p>
+    </div>
+
+    <div class="missionCard" data-mission="voyager">
+        <h3>Voyager 1</h3>
+        <p>Exploring interstellar space</p>
+    </div>
+
+    <div class="missionCard" data-mission="chandrayaan">
+        <h3>Chandrayaan-3</h3>
+        <p>India's lunar south pole mission</p>
+    </div>
+
+    <div class="missionCard" data-mission="perseverance">
+        <h3>Perseverance</h3>
+        <p>Mars rover searching for ancient life</p>
+    </div>
+
+    <div class="missionCard" data-mission="artemis">
+        <h3>Artemis II</h3>
+        <p>NASA's return to the Moon</p>
+    </div>
+
+</div>
+ 
+<div id="missionDetails" style="display:none; padding:20px;">
+
+    <button id="backButton">← Back</button>
+
+    <img id="missionImage"
+         src=""
+         style="width:220px; border-radius:12px; margin:20px 0;">
+
+    <h2 id="missionTitle"></h2>
+
+    <p id="missionDescription"></p>
+
+    <a id="missionLink"
+       href=""
+       target="_blank"
+       style="color:#123d4a;">
+        Learn More
+    </a>
+
+</div>
+
+</div>
+
+
+
+
+
+<div id="solar" class="window"
+style="display:none; position:absolute; z-index:9; background:#1B263B; width:650px; border-radius:16px; top:50%; left:50%; transform:translate(-50%,-50%);">
+
+    <div id="solarheader"class="windowHeader">
+        <div id="solarclose" class="closebutton"></div>
+
+        <p style="margin:0;">Solar System Explorer</p>
+
+    </div>
+
+    <div id="planetList"
+style="padding:20px; display:grid; grid-template-columns:repeat(2,1fr); gap:12px;">
+
+    <button class="planetButton"
+            data-name="Mercury"
+            data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbnJc-H3zK_nkw6ShJrzrsBAy4EkcXP3fi43hTiGZwK5YxHkH1JeYPQsXR49MLkgoVQfSvUV6hzz3Vb70mlwc-ibpggNzjZZZUHY9Qt1K0&s=10"
+            data-info="The closest planet to the Sun."
+            data-link="https://science.nasa.gov/mercury/">
+            Mercury
+    </button>
+
+    <button class="planetButton"
+            data-name="Venus"
+            data-image="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAH0AlgMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQYCBAcDCAH/xAAxEAABAwIEBAQFBQEBAAAAAAABAAIDBBEFEiExBkFRYQcTcYEicqGxwSMyUlORMxT/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/EABoRAQEBAQEBAQAAAAAAAAAAAAABEQIxIVH/2gAMAwEAAhEDEQA/AOHIiICIiAiIgIs4opJpGxwsdJI7RrWNuT6BWrDPD7G60B88baVh/sN3f4PygqSLpEfhrFG0efVzPdzygNH5XlU8B0rGnKZQfmQc8RWav4Tkgv5Mjjbk4KBqaKemdaVht1CDXREQEREBERAREQEREBERAVm4N4LxHiioBiHk0TXWkqHDT0b1K2PDvg2bivEyZc0eHQEefINMx/gD1+w9l9H4Zh9HhdHHTUkMccMbcrGgWAC1IlqtcN8D4VgFOG0sAMlrPmfq9/qfwFJVMLGDLYDspOqmvo3YqNkpy83dc9lL1ITm1FTZb2aQflCj6iBzr/B/qsBpbcgFrzQADZZtaxUayive9lWsUwxkgcCFfqyEuvb7KErKQm+imrjk2KYW6ncXRjToopdKxXD8zTcBUXFKMwSFwGi0yj0REBERAREQEREBbWF0E+KYjT0NK2807wxvQdz2A1Wqun+CeCtnrKvFpm3bF+jF8x1d9Lf6UHV+FsHp8DwinoKRto4m6uO8jubj3JU5vawv3SlizAXAv05BbrIRe+99lq1I0fJLtSsTTuN7CwUp5beYWEx0sBYW3XHHWVDzQW6rRmh6qSnIbmvqtKT4hopq4h6toA0BUPUx7qxTxX2UTVw2JuUiVV66HQhVHG6QOafhV8rWAA6Kt4pFmadF0jFc1mYY5C0rBSWMQ5Jc3dRqqCIiAiIgIiIC+hfCmgFJwnQC1jKDM4/Mbj6WXz0vpfg6PyuHsNZyZSRD1IYFYLlTlgsG3e7spANdluAB66qIpJ2RMvezjsLLcfKZQLvIHIAWWb0s5r1ke1g0cHHoFryucRmJ0uvOzWEu3tsvOR5IzC+/NcOu3XnlpVchectifRazs5GmnZSbIs8hJaLAJJE1tyRayxzLfrfVk8Q0jS1hJ1Kh6oFzjorFUszg5Rooypha0a6Bd5y5Wq3UwucCoDEogAVaq5wsQ3QKs4kL3W4xVCx6MfEq6rXjcRIcqqdCQqj8REQEREBERAX0VwbWB3DeFvJuf/LFf1DQCvnVdk8L68VXDkMRP6lLI6I36fuH0NvZS+LPXT6WpDi3QAHfRbrZTdum3JQdOb2122UrBrYX57ry3q2vTOZjaa65va5+yya2++q/QwNGm55BZhuXS2qsn6zayFg0dNrLCSJzmHNZvqtny2xNu/fotaZ5dzs3n2XeRytaVS4RtIZb1Kr1fLZxJN1L4hOMhDdByVdqSSSSmmYjqpxfcKFrWgA8ypyYOIOih61tgb2WpGbVOxwAMcqS43cT3Vy4mlDIn6qmKoIiICIiAiIgK4eGeMDDsbNLM60NYA0X5PH7fyPcKnr9a4tcHNJBBuCNwg+nqFwcRqpaJxuMuouuccBcTtxnD2iVwFZCA2Zv8ujh2KvVJUAiy59cR057TkJLRd37tgveN7YrOcPRRrai/tosvPGbM43AGykmFut6WfOczt+i0KupFrDlyXnJMXbG3VeIHmEsZc9+q1lqfI05nOlK0542MGu636uRtO21x7KEq5XSXJOUdFqTGbdalXMBcNVexKchrrkKTq5Q1pVQ4gxBsUTiXclpFV4jqvNm8sHuVCr0nlM0rpHbkrzUBERAREQEREBERBt4ViVThVdHWUcmSVh25OHMHsu18JcWUmM04dGckzR+pCTqw/kd1wletLUzUk7J6aV8UrDcOabEIPpuKsHlDXdZGq1sCuQ4D4ifC2HF2Frv7oxofUcvZXWhx+lqmCSnnZK3q110w1a2yGRwiZud7KTzR0lMQLZranoqpR4pGwlxcMxX5iGNNMRaHjVakS696ypEkpe46DZRFZVXub6BaFXi0bQbvA91VsZ4qgiDmMfnf0bqoqSxjFI4GOJcBZc5xbEX10x1+Abd1hiGIz10hMjiG8mrTUBERAREQEREBERAREQEREBZxSyQvzxPcx38mmxWCIJSLiHFogA2teQOTgCs38SYo8WM49mqIRBtT4hV1H/WoeQeV7LVREBERAREQEREBERB/9k="
+            data-info="The hottest planet in our Solar System."
+            data-link="https://science.nasa.gov/venus/">
+            Venus
+    </button>
+
+    <button class="planetButton"
+            data-name="Earth"
+            data-image="data:image/jpeg;base64,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"
+            data-info="The only known planet to support life."
+            data-link="https://science.nasa.gov/earth/">
+            Earth
+    </button>
+
+    <button class="planetButton"
+            data-name="Mars"
+            data-image="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFwAXAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgIHAf/EADQQAAIBAwIEAwYGAQUAAAAAAAECAwAEERIhBTFBURNhcQYiMoGhwRRCUpHh8PEHQ5Kx0f/EABkBAAIDAQAAAAAAAAAAAAAAAAMEAAECBf/EAB8RAAICAgMBAQEAAAAAAAAAAAABAhEDIRIxQQRCIv/aAAwDAQACEQMRAD8A8NqVKZcF4TNxS4CICIwfefH0HnUbotK9IFs7O4vZhFbRM7HtyHr2rZ8F9hkkKtxCVmJ/249h+/M/StJwXg0FpbiK2hCr+ZzzJ9aeRRoi+7qdh0X70nkzy/I9i+ZdyAOH+znC7PT4VnACPzFQT+53pslvBGMBUHptXxATuR8q6kJWFtIwTse+KUk2+x2MVHpA91DaS4SSCKRTz1xhh9aznGfZPg12T4FoIG/XAxU/8cafvTibWYi2+c42FB6ZBuMjzokG47TBZKlpo884z7KX3Dmd4x48S75Qe8B5j/ys/XtUS/iYWimYgqMo2fhNZz2m9ihdQNdcNVVvFGp4l2WXzHY/901DOnqQnk+Z1yieb1K6dWRirghgcEEbg1zTIoEWFrJe3cVvCMvI2PTua9K4faR2McNhax5wMu/X1PmaznsPZhfEvJB8R0J6df75VvbFN9TetAzPVDGCO7D7NSwWIbRryFFNmNykQbz7UNBIsb7HbrV8t2ukou2dyaUZ0InYuEQ7iuZrmOV+QGBv5UBJOpbA5dyatTw99UgIJ6f3+5rDiEUwsKjJpTkdzQcyQrKUJGelXRMgYDG9SaFZAWHxeVZTaLkkxdKgQkoT8qMtiTaIyk6lJ2JoSQ7HuOVRJnCCME4J2x0x/FaezC0Y7/ULgkbA8Xs1w2QLpF+j/Y/I96wWK9tuIUmhe3ulBWRCrgHIZTXjnErN7C/ntJD70Llc9x0PzFO4J8lT8Of9OPjLkvTbez4MdtbW64CrCHfb8xP+a1cTIsW/5tqyHArkNCrDrgftWkhcOvxcux5VWTsvC9Bcjxo3uHbz6VW84JBDYHl1pfd3fh+Gg0h2bGDvgVXraFnkRizHoWOPlQKYw5IcRtFKNE4OgjlyyK+3ph/CssZCHoVJpPb8SnZjqifnjZq4u78rIFkjkQ5GMn7VSjKy3OFDnhbhYHXX4nm7k49N6YRyBTguCew3xWVjmfxtSwqJD8R+AHbbNOLS5MttmQskgJDIDnfvyrOSPpvFNdF1wcSfpXmT0oaSWKeOSa1m2QFcqeRxzr5dR/ioGh1nSw36UFDoht2jjAHRsVIJUSbd14MLa4WWCFSdy2CVGM+f1rDe23DWn4401uBh411HuRkfYVpLa5SOfGsAAk4NB3umWcs25/mjw/iVi2R84UzN8DuCsA8j+1aqzuNKDfNYThN34L6W5ZrSWlwpUKDy5UeaFschncjWzYO3SoHOOdUCTUK6DigMYTCInwd6KlKyBNR+E5pd4gFdh8blufSs8dmlLVFsjASMvhZQjY5ya4t7lklOiTIxjc7VYjgjevixxgkgDJqOq2RJ3aCk4oEz4keD+pTmh5LmJtTIwOd+e9VXLKqgkjbpS66QqyF9s8gDyqQjHwmScvSySZNfu5ySOVJ+LXxtblYyxyUDcu5NGO2mQEHYb1meJXH4m9lkzkZwPQbUzFWxWUgVSQdqbWV4VAGaUV2jFTkGiNWC6NZDdgrzq83SAc6z9tde6AaK8UEZoHENzYyN6vQ1ZFchutJ9e9diQg7VbiilNjoTedXLcYHOkiTODvVpmfTnYeprDgEWQZGdWJLrntQd3cAyAE7rzxQT3BU53yOW9CSz6FLMa3GFMxPJaot4jehYmC/E2w8qQ1ZNIZXLH5VXRkqBN2SpUqVZR0rlTsaIjuSDvQtSqaIMkn1dqISXA3YCk2a6DHvWXEl0ODdAbLVT3PVmz60s1t3rkknmTUUaLbbDZbz9NCSSNIcsa4qVsolSpUqEP//Z"
+            data-info="Known as the Red Planet."
+            data-link="https://science.nasa.gov/mars/">
+            Mars
+    </button>
+
+    <button class="planetButton"
+            data-name="Jupiter"
+            data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKMB5kidcxn-4QWXTx1960sQmyK3u4UURelbyWAyGtf2vdyobr_0WoaQXTADdrmYngA4ERNSXL7IdyO48wcnBP4gT4tsVBmxBNPUVw40E&s=10"
+            data-info="The largest planet in the Solar System."
+            data-link="https://science.nasa.gov/jupiter/">
+            Jupiter
+    </button>
+
+    <button class="planetButton"
+            data-name="Saturn"
+            data-image="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFwAXAMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAQIDBAUGBwj/xAA7EAABAwIDBAQLBwUAAAAAAAABAAIDBBEFEiEGMVGRIkFxoQcTFBUjMlJhgbHRM1RicoKSwUJDU2Pw/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAECAwT/xAAbEQEBAQEBAQEBAAAAAAAAAAAAARECIQMSIv/aAAwDAQACEQMRAD8A4ignYqWea3ionuB67ac1MjwerdbMGMvxdr3KbBXI1bjBMv2tS1v6PqVo8L8H7qmz6yqNLEfbsXn9P1IUvUXGGRrseH7CbJ0rR49lTWv6zNNYcm2V5Dsrsg5ob5kpT8XX+axfrIv5ef0S9ATeDPZDEWuENPUUbzufTzmw+DrhZnHPAzV0kbpsJqnV8Y1yaMlA7NzuY7En24p+a5MNyKyvJsBLJnxeOLJGHK6N7Ok08Droo0uDVLT0HRu+JBXSdSpisshZSZKKpi9eB9uIFx3KONd2quo28dBVPsZXxxDgAXnmbAcin/IKSIXqJXvsLnO+w5Cyp63aA3LacXPtbgquSsqKhrnSSmx6hoFxy1vYtZtoKeimPmukjaWnSbKLn3hFFtXUOd6Uu7brOu3pNl0xlvaDabOR0+9aTD8ba62oXIGuLTdpIKs6HFZYXAOOixfnKa7lh+LXt0lpqDEgQNVxXCcbDsvSWywvFr2sVw6+eNytjtNsxhm1FOXTQxNrQ20c5YDf3O4j5Lj+I4JHQ1ctHPG+nniOVzGuI+IG4iy69heIXsS5Z7wt4KcQwLz7Q3bV0Dby5f7kHXf8u/supxbuLXM5cNmbrFK149l7bHmPooclLJm9LRvc7i0NcOd0zS449hAmAI4t+iuIsQilYHXB7LLt7GfGAe66mAZYmt9ygqUJA5o16l26ZJcNUmyUSEY1UCcqGVOABKACapVNO+neC06LV4LjB0Bd3rJ5U5DIYXgtWb6Oy4Niea3SW3w+aOrp3U8wD4pWFj2nraRYriGAYqcwBNiuo7NVmctuVw75z1qV5/xGmfhmJVdA8kmmnfCSRa+VxF0gSadfNWW3L2P2zxt0fqmtktzVM06L0sGUQJG5GgAtIUH8U41wTVkdlFSWuCWCFE1Rgu4rNhqXmCSXgKP0uKTYlMNTaas8nla4Erp+yeNR09FLWzu9FTxmR/YBdclDCrUVc78LGHwhzhI7NLYdQ1A56/AJeYK2omkq6mWomN5JnmR54km5+aIN0VrSYNNKRn6I4DUq7gwmNkYGVv7b96XuRZGOfSTxuDZGZL7i42HPcpcGCV8zQ6OJpbxEjSO4qTFjERFpGPZ2dIfwnmT0Ejs7XxNef6r5Hc9FdqeGY9mq91szoG9ryT8lJZsvIPtKkH3NYpEckg+xqprfnDx33TnlVY3dOw/niv8AIhY3pfEY7OAbpHHtIRDZ5w3SdwU1tdVje6B3Yxw/kpXnCq4Q83KbV8Qhs8euQ9yeZs7H/U5x+KeNfV/6QfeHH+UjyytcdZoQPww/Vyf0eH4sEpo9SwE+/X5qYylhib6osN6qny1BF31U1vw2aOYChyyUQN55WSOH+R+e3O6ZaavJMTooui14kd7MXSPcozsVqCfR0bcvV4ybKeQBVO/F6eNuWIOePc2w/wC+CjOxmS/QhaBwJJ+iv4TVWgiRrqyCcZUTM9WaQdjym0EEgVlSN1RJ+5Dy6q+8P5qOggfNbVfeJP3JLqmd3rTyn9ZTSLrQGdTc6niggggCCCCD/9k="
+            data-info="Famous for its beautiful rings."
+            data-link="https://science.nasa.gov/saturn/">
+            Saturn
+    </button>
+
+    <button class="planetButton"
+            data-name="Uranus"
+            data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWVQ1r7lBMcJuqwAapNidCnhn5W03Q95G6nNqw_8FqUg&s=10"
+            data-info="Rotates on its side."
+            data-link="https://science.nasa.gov/uranus/">
+             Uranus
+    </button>
+
+    <button class="planetButton"
+            data-name="Neptune"
+            data-image="data:image/jpeg;base64,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"
+            data-info="The farthest planet from the Sun."
+            data-link="https://science.nasa.gov/neptune/">
+            Neptune
+    </button>
+
+</div>
+    <div id="planetPage" style="display:none; padding:20px; text-align:center;">
+
+    <button id="planetBack">← Back</button>
+
+    <br><br>
+
+    <img id="planetImage"
+         style="width:220px; height:220px; object-fit:cover; border-radius:12px;">
+
+    <h2 id="planetName"></h2>
+
+    <p id="planetInfo"></p>
+
+    <button id="planetLearn">
+        Learn More
+    </button>
+
+</div>
+</div>
+
+
+
+
+<div id="solar" class="window"
+style="display:none; position:absolute; width:700px; top:50%; left:50%; transform:translate(-50%,-50%); background:#14253D; border-radius:16px; z-index:9;">
+
+    <div id="solarheader"
+    style="height:40px; background:black; display:flex; align-items:center; justify-content:center; color:white; cursor:move;">
+
+        <div id="solarclose" class="closebutton"></div>
+
+        <p style="margin:0;">Solar System Explorer</p>
+
+    </div>
+
+    <div style="padding:20px; text-align:center;">
+
+        <h2 style="color:#4CC9F0;">Solar System</h2>
+
+        <img
+        src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Solar_sys8.jpg"
+        style="width:100%; border-radius:10px;">
+
+        <p style="color:white;">
+            Click a planet below.
+        </p>
+
+        <div id="planetButtons" style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;">
+
+    <button class="planetButton"
+        data-name="Mercury"
+        data-image=""
+        data-info="The closest planet to the Sun."
+        data-link="">
+        Mercury
+    </button>
+
+    <button class="planetButton"
+        data-name="Venus"
+        data-image=""
+        data-info="The hottest planet in the Solar System."
+        data-link="">
+        Venus
+    </button>
+
+    <button class="planetButton"
+        data-name="Earth"
+        data-image=""
+        data-info="The only known planet to support life."
+        data-link="">
+        Earth
+    </button>
+
+    <button class="planetButton"
+        data-name="Mars"
+        data-image=""
+        data-info="The Red Planet."
+        data-link="">
+        Mars
+    </button>
+
+    <button class="planetButton"
+        data-name="Jupiter"
+        data-image=""
+        data-info="The largest planet."
+        data-link="">
+        Jupiter
+    </button>
+
+    <button class="planetButton"
+        data-name="Saturn"
+        data-image=""
+        data-info="Famous for its rings."
+        data-link="">
+        Saturn
+    </button>
+
+    <button class="planetButton"
+        data-name="Uranus"
+        data-image=""
+        data-info="Rotates on its side."
+        data-link="">
+        Uranus
+    </button>
+
+    <button class="planetButton"
+        data-name="Neptune"
+        data-image=""
+        data-info="The farthest planet from the Sun."
+        data-link="">
+        Neptune
+    </button>
+
+</div>
+
+<div id="planetPage" style="display:none;text-align:center;margin-top:20px;">
+
+    <button id="planetBack">← Back</button>
+
+    <br><br>
+
+    <img id="planetImage"
+         style="width:250px;height:250px;object-fit:cover;border-radius:12px;">
+
+    <h2 id="planetName" style="color:#4CC9F0;"></h2>
+
+    <p id="planetInfo" style="color:white;"></p>
+
+    <button id="planetLearn">
+        If you want to know more about it, click here.
+    </button>
+
+</div>
+
+    </div>
+
+</div>
+
+
+
+
+<div id="settings"
+style="display:none; position:absolute; z-index:9; background:#1B263B; width:500px; border-radius:16px; top:50%; left:50%; transform:translate(-50%,-50%);">
+
+    <div id="settingsheader"  class="windowHeader">
+        <div id="settingsclose" class="closebutton"></div>
+
+        <p style="margin:0;">Settings</p>
+
+    </div>
+
+    <div style="padding:20px; color:white;">
+
+        <h2 style="margin-top:0;">Appearance</h2>
+
+        <button id="openWallpaperPicker">
+            Change Wallpaper
+        </button>
+
+        <hr style="margin:25px 0; border-color:#355;">
+
+        <div class="settingItem" id="aboutButton">
+    <span>About SPACE OS</span>
+    <span>›</span>
+    </div>
+
+    </div>
+
+</div>
+
+ <div id="about"
+style="display:none; position:absolute; z-index:9; background:#1B263B; width:450px; border-radius:16px; top:50%; left:50%; transform:translate(-50%,-50%);">
+
+    <div id="aboutheader" class="windowHeader"> 
+        <div id="aboutclose" class="closebutton"></div>
+
+        <p style="margin:0;">About SPACE OS</p>
+
+    </div>
+
+    <div style="padding:25px; color:white; text-align:center;">
+
+        <h1>SPACE OS</h1>
+
+        <p>Version 2.0</p>
+
+        <p>Developed by</p>
+
+        <h3>Shubh Dalmia</h3>
+
+        <p>Built for Hack Club Mission 2</p>
+
+        <button id="githubButton">GitHub</button>
+
+    </div>
+
+</div>
 
 
     
+<div id="notes"  
+     style="display:none; position:absolute; z-index:9; background:#14253D; border:1px solid rgba(255,255,255,.12); width:500px; border-radius:16px; top:100%; left:50%; transform:translate(-50%, -50%);">
 
- <div id="notes"
-     style="display: none; position: absolute; z-index: 9; background-color: #3d025b; text-align: center; border: 4mm ridge rgb(211 220 50 / 0.6); width: 500px; border-radius: 16px; top: 100%; left: 50%; transform: translate(-50%, -50%);">
+    <div id="notesheader" class="windowHeader">
+        <div id="notesclose" class="closebutton"></div>
 
-  <div id="notesheader"
-       style="padding: px; cursor: move; z-index: 10; background-color: #000000; color: #fff; width: 100%; display: flex; align-items: center; justify-content: center;">
+        <p style="margin:0; font-weight:500;">
+            Notes
+        </p>
 
-<div id="notesclose" class="closebutton"></div>
+    </div>
 
-<p style="margin: 0px; color: #fff; font-weight: 500">
-  Space Missions
-</p>
+    <div style="background:#14253D; margin:6px; padding:16px; border-radius:12px;">
 
-  </div>
+        <input
+            type="text"
+            placeholder="Title..."
+            style="width:100%; padding:10px; box-sizing:border-box; margin-bottom:15px; border-radius:8px;"
+        >
 
-  <div style="background-color: #14253D; margin: 6px; border-radius: 12px; padding: 20px; color: #EAEAEA;">
-   <h2>Historic Space Missions</h2>
+        <textarea 
+            id="notesText"
+            placeholder="Start writing..."
+            style="width:100%; height:300px; box-sizing:border-box; padding:10px; resize:none; border-radius:8px;"
+        ></textarea>
 
-<h3>Sputnik 1 (USSR, 1957)</h3>
-<p>
-Sputnik 1 was the world's first artificial satellite. Launched by the Soviet Union, it marked the beginning of the Space Age and sparked the Space Race between the USSR and the United States.
-</p>
-<h3>Apollo 11 (USA, 1969)</h3>
-<p>
-Apollo 11 became the first mission to land humans on the Moon. Neil Armstrong and Buzz Aldrin walked on the lunar surface while Michael Collins remained in orbit aboard the command module.
-</p>
-<h3>Voyager 1 (USA, 1977)</h3>
-<p>
-Voyager 1 explored the outer planets and later became the first human-made object to enter interstellar space. It continues to send data back to Earth today.
-</p>
-<h3>Mars Pathfinder (USA, 1997)</h3>
-<p>
-Mars Pathfinder successfully landed on Mars and deployed the Sojourner rover, proving that robotic vehicles could operate on another planet.
-</p>
-<h3>International Space Station (1998–Present)</h3>
-<p>
-The ISS is the largest human-made structure in space and has been continuously inhabited since 2000. It serves as a laboratory for international scientific research.
-</p>
-<h3>Chandrayaan-1 (India, 2008)</h3>
-<p>
-Chandrayaan-1 was India's first lunar mission. It played a major role in confirming the presence of water molecules on the Moon, one of the most important lunar discoveries of the century.
-</p>
-<h3>Mangalyaan / Mars Orbiter Mission (India, 2013)</h3>
-<p>
-India became the first nation to reach Mars orbit on its first attempt. Mangalyaan demonstrated ISRO's engineering capabilities at an exceptionally low mission cost.
-</p>
-<h3>Rosetta (Europe, 2014)</h3>
-<p>
-The European Space Agency's Rosetta mission became the first spacecraft to orbit and land a probe on a comet, helping scientists understand the origins of the Solar System.
-</p>
-
-<h3>Chandrayaan-3 (India, 2023)</h3>
-<p>
-Chandrayaan-3 successfully achieved a soft landing near the Moon's south pole. India became the fourth country to land on the Moon and the first to reach the lunar south polar region.
-</p>
-
-<h3>Artemis Program (USA, Present)</h3>
-<p>
-NASA's Artemis program aims to return humans to the Moon, establish a sustainable lunar presence, and prepare for future missions to Mars.
-</p>
-
-  </div> 
+    </div>
 
 </div>
 
-<div id="factsApp" style="text-align: center; padding: 20px; width: fit-content">
-  <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564"
-       style="width: 64px; height: 64px; border-radius: 20px;">
-  <p style="margin: 0px; color: #ffffff;">Space Facts</p>
+
+<div id="wallpaperPicker"
+     style="display:none; position:absolute; z-index:9; background:#1B263B; width:520px; border-radius:16px; top:50%; left:50%; transform:translate(-50%,-50%);">
+
+    <div id="wallpaperPickerheader" class="windowHeader">
+        <div id="wallpaperPickerclose" class="closebutton"></div>
+
+        <p style="margin:0;">Choose Wallpaper</p>
+
+    </div>
+
+    <div style="padding:20px; display:grid; grid-template-columns:1fr 1fr; gap:15px;">
+
+        <img class="wallpaperThumb" data-wall="0" src="https://cdn.esahubble.org/archives/images/screen/heic0910e.jpg">
+
+        <img class="wallpaperThumb" data-wall="1" src="https://www.nasa.gov/wp-content/uploads/2026/06/55352876103-02b858152c-o.jpg?resize=1200,809">
+
+        <img class="wallpaperThumb" data-wall="2" src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001861/GSFC_20171208_Archive_e001861~orig.jpg">
+
+        <img class="wallpaperThumb" data-wall="3" src="https://images-assets.nasa.gov/image/PIA00407/PIA00407~orig.jpg">
+
+    </div>
+
 </div>
+
 
 <div id="facts"
-     style="display: none; position: absolute; z-index: 9; background-color: #0D1B2A; text-align: center; border: 4mm ridge rgb(76, 201, 240); width: 500px; border-radius: 16px; top: 65%; left: 50%; transform: translate(-50%, -50%);">
+     style="display: none; position: absolute; z-index: 9; background:#14253D; text-align: center; border:1px solid rgba(255,255,255,.12); width: 500px; border-radius: 16px; top: 65%; left: 50%; transform: translate(-50%, -50%);">
 
-  <div id="factsheader"
-       style="padding: 1px; cursor: move; background-color: #000000; color: #fff; width: 100%; display: flex; align-items: center; justify-content: center;">
-
+  <div id="factsheader" class="windowHeader" >
     <div id="factsclose" class="closebutton"></div>
 
     <p style="margin: 0px; color: #fff; font-weight: 500">
@@ -143,7 +504,9 @@ NASA's Artemis program aims to return humans to the Moon, establish a sustainabl
 
   </div>
 
-  <div style="background-color: white; margin: 6px; border-radius: 12px; padding: 100px; min-height: 200px;">
+  
+
+  <div style="background:#1B314D; margin:6px; border-radius:12px; padding:100px; min-height:200px;">
 
     <h2 style="color:#4CC9F0;">
   Space Fact Generator
@@ -162,12 +525,37 @@ NASA's Artemis program aims to return humans to the Moon, establish a sustainabl
 
 </div>
 
+
+</div>
+
      <head>
   <script type="module" src="./script.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
 
 
-     
+
+    <div id="contextMenu">
+
+    <div class="menuItem" id="refreshDesktop">
+        Refresh
+    </div>
+
+    <div class="menuItem" id="newNote">
+        New Note
+    </div>
+
+    <div class="menuItem" id="changeWallpaper">
+        Change Wallpaper
+    </div>
+
+    <div class="menuItem" id="openSettings">
+        Settings
+    </div>
+
+</div>
+
+    <div id="saveToast">✔ Notes Saved</div>
+    
     </body>
 </html>
